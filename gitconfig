@@ -49,3 +49,8 @@
 [user]
 	email = lizhenanl54@gmail.com
 	name = Lizhenan Li
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
